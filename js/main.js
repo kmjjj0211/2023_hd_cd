@@ -72,13 +72,13 @@ window.addEventListener("scroll",e=>{
     if(scroll>3500){
         card_benefit_lists[0].classList.add("on");
     }
-    if(scroll>3700){
+    if(scroll>3800){
         card_benefit_lists[1].classList.add("on");
     }
-    if(scroll>3900){
+    if(scroll>4000){
         card_benefit_lists[2].classList.add("on");
     }
-    if(scroll>4100){
+    if(scroll>4200){
         card_benefit_lists[3].classList.add("on");
     }
 })
