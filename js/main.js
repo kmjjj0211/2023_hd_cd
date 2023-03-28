@@ -38,6 +38,7 @@ const event_text = document.querySelector(".event_text");
 const event_text2_text = document.querySelector(".event_text2_text");
 const event_text3 = document.querySelector(".event_text3>p");
 const event_order_list = document.querySelectorAll(".event_order>ol>li");
+const card_benefit_lists = document.querySelectorAll(".card_benefit_lists>li");
 
 function scrollActive(el) {
     el.style.opacity = "1";
@@ -67,6 +68,19 @@ window.addEventListener("scroll",e=>{
             event_order_list[i].classList.add("on");
         }
     }
+
+    if(scroll>3500){
+        card_benefit_lists[0].classList.add("on");
+    }
+    if(scroll>3700){
+        card_benefit_lists[1].classList.add("on");
+    }
+    if(scroll>3900){
+        card_benefit_lists[2].classList.add("on");
+    }
+    if(scroll>4100){
+        card_benefit_lists[3].classList.add("on");
+    }
 })
 
 //
@@ -86,3 +100,5 @@ const header_arrow = document.querySelector("#header>i");
 setTimeout(()=>{
     header_arrow.classList.add("on")
 },1500)
+
+

@@ -244,6 +244,46 @@ a{text-decoration: none; color: #fff;}
     width: 100%;
     display: flex;
 }
+#content>.card_benefit>.card_benefit_lists>li:first-of-type{
+    position: relative; left: -1000px;
+    transition: all 0.5s ease-in 0.3s;
+}
+
+#content>.card_benefit>.card_benefit_lists>li:first-of-type.on{
+    left: 0px;
+}
+
+#content>.card_benefit>.card_benefit_lists>li:nth-of-type(2){
+    position: relative; right: -1000px;
+    transition: all 0.5s ease-in 0.3s;
+}
+#content>.card_benefit>.card_benefit_lists>li:nth-of-type(2).on{
+    right: 0px;
+}
+#content>.card_benefit>.card_benefit_lists>li:nth-of-type(3){
+    position: relative; left: -1000px;
+    transition: all 0.5s ease-in 0.3s;
+}
+#content>.card_benefit>.card_benefit_lists>li:nth-of-type(3).on{
+    left: 0px;
+}
+#content>.card_benefit>.card_benefit_lists>li:last-of-type{
+    position: relative; right: -1000px;
+    transition: all 0.5s ease-in 0.3s;
+}
+#content>.card_benefit>.card_benefit_lists>li:last-of-type.on{
+    right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
 #content>.card_benefit>.card_benefit_lists>li>.card_benefit_lists_text{
     margin-bottom: 150px;
     width: 50%;
